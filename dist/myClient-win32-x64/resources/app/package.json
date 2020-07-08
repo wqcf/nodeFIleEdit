@@ -1,0 +1,29 @@
+{
+  "name": "textedit",
+  "version": "1.0.0",
+  "description": "文件查找以及修改第一行内容",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . myClient --win --out ./dist --arch=x64 --app-version=0.0.1 --electron-version=2.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "build":{
+    "appId": "com.gao.Play",
+    "copyright": "Yimi",
+    "productName": "Play",
+    "dmg":{
+      "window": {
+        "x":100,
+        "y":100,
+        "width": 500,
+        "height": 400
+      }
+    }
+  }
+}

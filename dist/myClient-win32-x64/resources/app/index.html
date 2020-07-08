@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>test</title>
+</head>
+
+<body>
+	<label>查询目录:</label><input type="text" value="E:\project\procedure" id="base-path"><br>
+	<label>查询文件:</label><input type="text" value="a.txt" id="file-name"><br>
+	<label>修改第几行:</label><input type="text" value="1" id="file-index"><br>
+	<label>修改内容:</label><input type="text" value="您好" id="file-content"><br>
+	<button id="button">点击这里</button>
+	<script src="./file.js"></script>
+	<script>
+		var button = document.getElementById('button');
+		var input = document.getElementById('base-path');
+		var fileName = document.getElementById('file-name');
+		var fileIndex = document.getElementById('file-index');
+		var fileContent = document.getElementById('file-content');
+		button.onclick = function () {
+			let path = input.value;
+			let name = fileName.value;
+			let index = fileIndex.value;
+			let content = fileContent.value;
+			run(path, name, index, content);
+		}
+	</script>
+</body>
+
+</html>
